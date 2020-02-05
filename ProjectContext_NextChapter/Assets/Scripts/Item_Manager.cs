@@ -10,8 +10,4 @@ public class Item_Manager : MonoBehaviour
 
     public Dictionary<GameObject, string> ItemList;
 
-    private void Start()
-    {
-         
-    }
 }

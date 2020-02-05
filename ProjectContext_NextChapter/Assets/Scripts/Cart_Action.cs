@@ -10,7 +10,6 @@ public class Cart_Action : MonoBehaviour
     {
         if (collision.gameObject.tag == "Object")
         {
-            Debug.Log("Go to Fly");
             collision.rigidbody.AddForce(Vector3.up * Random.Range(FlyPower, From), ForceMode.Impulse);
         }
     }
