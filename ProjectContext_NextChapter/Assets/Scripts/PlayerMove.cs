@@ -43,6 +43,9 @@ public class PlayerMove : MonoBehaviour
             else
                 Player1Vertical = 0;
 
+            if (Input.GetKey(KeyCode.LeftShift))
+                Player1Vertical *= 1.8f;
+
             if (Input.GetKey(KeyCode.A))
                 gameObject.transform.Rotate(0,-2,0);
             else if (Input.GetKey(KeyCode.D))
@@ -59,12 +62,16 @@ public class PlayerMove : MonoBehaviour
 
         else if (ThisPlayer == PlayerNumber.Player2)//Player2 is Move to Arrow
         {
+
             if (Input.GetKey(KeyCode.UpArrow))
                 Player2Vertical = 1 * MovePower;
             else if (Input.GetKey(KeyCode.DownArrow))
                 Player2Vertical = -1 * MovePower;
             else
                 Player2Vertical = 0;
+
+            if (Input.GetKey(KeyCode.Slash))
+                Player2Vertical *= 1.8f;
 
             if (Input.GetKey(KeyCode.LeftArrow))
                 gameObject.transform.Rotate(0, -2, 0);
@@ -91,7 +98,6 @@ public class PlayerMove : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Triged");
 
         if (gameObject.name == "Player1")
             Player1isGround = true;
