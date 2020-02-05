@@ -29,11 +29,11 @@ public class PlayerMove : MonoBehaviour
         //else if(Camera.main.targetDisplay == 2)
         if(ThisPlayer == PlayerNumber.Player1)
             Player1Rigid = gameObject.GetComponent<Rigidbody>();
-            Player1Trail = gameObject.GetComponent<TrailRenderer>();
+            Player1Trail = gameObject.GetComponentInChildren<TrailRenderer>();
         if (ThisPlayer == PlayerNumber.Player2)
         {
             Player2Rigid = gameObject.GetComponent<Rigidbody>();
-            Player2Trail = gameObject.GetComponent<TrailRenderer>();
+            Player2Trail = gameObject.GetComponentInChildren<TrailRenderer>();
         }
             //I will fix this code to both controller :)
     }

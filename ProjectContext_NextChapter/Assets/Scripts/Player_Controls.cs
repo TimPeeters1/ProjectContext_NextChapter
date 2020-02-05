@@ -10,7 +10,6 @@ public enum PlayerController
 
 public class Player_Controls : MonoBehaviour
 {
-
     public PlayerController thisPlayer;
 
     // Start is called before the first frame update
