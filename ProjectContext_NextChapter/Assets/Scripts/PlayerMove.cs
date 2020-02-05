@@ -15,6 +15,8 @@ public class PlayerMove : MonoBehaviour
 
     private Rigidbody Player1Rigid;
     private Rigidbody Player2Rigid;
+    private TrailRenderer Player1Trail;
+    private TrailRenderer Player2Trail;
 
     private bool Player1isGround = false;
     private bool Player2isGround = false;
@@ -27,9 +29,13 @@ public class PlayerMove : MonoBehaviour
         //else if(Camera.main.targetDisplay == 2)
         if(ThisPlayer == PlayerNumber.Player1)
             Player1Rigid = gameObject.GetComponent<Rigidbody>();
+            Player1Trail = gameObject.GetComponent<TrailRenderer>();
         if (ThisPlayer == PlayerNumber.Player2)
+        {
             Player2Rigid = gameObject.GetComponent<Rigidbody>();
-        //I will fix this code to both controller :)
+            Player2Trail = gameObject.GetComponent<TrailRenderer>();
+        }
+            //I will fix this code to both controller :)
     }
 
     void Update()
@@ -44,7 +50,13 @@ public class PlayerMove : MonoBehaviour
                 Player1Vertical = 0;
 
             if (Input.GetKey(KeyCode.LeftShift))
+            {
                 Player1Vertical *= 1.8f;
+                Player1Trail.emitting = true;
+            }
+
+            if (Input.GetKeyUp(KeyCode.Slash))
+                Player1Trail.emitting = false;
 
             if (Input.GetKey(KeyCode.A))
                 gameObject.transform.Rotate(0,-2,0);
@@ -71,7 +83,13 @@ public class PlayerMove : MonoBehaviour
                 Player2Vertical = 0;
 
             if (Input.GetKey(KeyCode.Slash))
+            {
                 Player2Vertical *= 1.8f;
+                Player2Trail.emitting = true;
+            }
+
+            if (Input.GetKeyUp(KeyCode.Slash))
+                Player2Trail.emitting = false;
 
             if (Input.GetKey(KeyCode.LeftArrow))
                 gameObject.transform.Rotate(0, -2, 0);
