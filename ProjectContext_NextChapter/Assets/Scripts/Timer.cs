@@ -58,8 +58,7 @@ public class Timer : MonoBehaviour
     {
         if (CurrentTime < 0)
         {
-            TimerText.color = new Color(255, 0, 0);
-            TimerText.text = "Round Over";
+            GameOver();
         }
         else
         {
@@ -69,7 +68,8 @@ public class Timer : MonoBehaviour
 
     public void GameOver()
     {
-
+        TimerText.color = new Color(255, 0, 0);
+        TimerText.text = "Round Over";
     }
 
 }

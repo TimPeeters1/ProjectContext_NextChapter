@@ -18,8 +18,8 @@ public class PlayerMove : MonoBehaviour
     private TrailRenderer Player1Trail;
     private TrailRenderer Player2Trail;
 
-    private bool Player1isGround = false;
-    public static bool Player2isGround = false;//Player2 has 2 trigger in same body, so i decided separate
+    public static bool Player1isGround = false;
+    public static bool Player2isGround = false;
     private float Player1Vertical = 0;
     private float Player2Vertical = 0;
 
@@ -104,20 +104,5 @@ public class PlayerMove : MonoBehaviour
                 Player2Rigid.AddForce(Vector3.up * JumpPower, ForceMode.Impulse);
             }
         }
-    }
-
-    //private void OnCollisionEnter(Collision collision)
-    //{
-    //    if (gameObject.name == "Player1")
-    //        Player1isGround = true;
-    //    else if (gameObject.name == "Player2")
-    //        Player2isGround = true;
-    //}
-
-    private void OnTriggerEnter(Collider other)
-    {
-
-        if (gameObject.name == "Player1")
-            Player1isGround = true;
     }
 }

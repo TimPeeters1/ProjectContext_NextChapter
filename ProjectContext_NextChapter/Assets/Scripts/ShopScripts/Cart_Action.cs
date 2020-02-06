@@ -11,7 +11,6 @@ public class Cart_Action : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
-        Debug.Log("Beep");
         if (collision.gameObject.tag == "Object")
         {
             collision.GetComponent<Rigidbody>().AddForce(Vector3.up * Random.Range(FlyPower, From), ForceMode.Impulse);

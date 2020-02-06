@@ -7,6 +7,8 @@ TagManager:
   - Object
   - Shelf
   - Stuff
+  - Water
+  - Food
   layers:
   - Default
   - TransparentFX
