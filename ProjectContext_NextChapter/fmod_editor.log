@@ -106,3 +106,12 @@
 [LOG] SoundI::release                          : Supermarket (00000242E3275438)
 [LOG] SoundI::release                          :     Supermarket (00000244B8680E28)
 [LOG] SoundI::release                          :     Supermarket (00000242E3276F38)
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
+[LOG] Thread::callback                         : FMOD file thread finished.
+[LOG] SystemI::close                           : Closed.
