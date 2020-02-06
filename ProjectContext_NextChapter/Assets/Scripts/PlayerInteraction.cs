@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CartInteraction : MonoBehaviour
+public class PlayerInteraction : MonoBehaviour
 {
     private void OnTriggerEnter(Collider collision)
     {

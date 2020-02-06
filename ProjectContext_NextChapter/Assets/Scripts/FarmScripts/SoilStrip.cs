@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SoilStrip : MonoBehaviour
+public class SoilStrip : MonoBehaviour, ShopElement
 {
     [Header("Farm Product Info")]
     public FarmItem farmItem;
@@ -12,11 +12,16 @@ public class SoilStrip : MonoBehaviour
     [Space]
     [Header("UI")]
     public UnityEngine.UI.Text itemText;
+
+    public void BuyItem()
+    {
+        PlantItem();
+    }
+
     public void PlantItem()
     {
         GameManager.Instance.Player1Money -= CostToPlant;
         GameManager.Instance.Player1List.MarkItem(ShopItem.None, farmItem);
         GameManager.Instance.Player2Counter.StartCoroutine(GameManager.Instance.Player2Counter.ShowBuyCounter(CostToPlant));
-
     }
 }
