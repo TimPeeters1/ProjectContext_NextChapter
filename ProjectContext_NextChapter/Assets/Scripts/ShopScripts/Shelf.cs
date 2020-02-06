@@ -15,7 +15,6 @@ public class Shelf : MonoBehaviour, ShopElement
     public UnityEngine.UI.Text itemText;
     public UnityEngine.UI.Image fairtradeIcon;
 
-   
 
     private void Awake()
     {
@@ -34,5 +33,4 @@ public class Shelf : MonoBehaviour, ShopElement
         GameManager.Instance.Player2Money -= Cost;
         GameManager.Instance.Player2Counter.StartCoroutine(GameManager.Instance.Player2Counter.ShowBuyCounter(Cost));
     }
-
 }

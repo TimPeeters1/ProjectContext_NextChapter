@@ -1,18 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!65 &3227036639428496759
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8196341937916358593}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 92.67622, y: 116.379715, z: 139.04536}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5244683910076710055
 GameObject:
   m_ObjectHideFlags: 0
@@ -182,7 +169,7 @@ GameObject:
   - component: {fileID: 4507377776432664841}
   - component: {fileID: 4507377776432664835}
   m_Layer: 0
-  m_Name: Player2 1
+  m_Name: NewPlayer2
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -306,6 +293,19 @@ MonoBehaviour:
   ThisPlayer: 1
   MovePower: 5
   JumpPower: 1
+--- !u!65 &3227036639428496759
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8196341937916358593}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 92.67622, y: 116.379715, z: 139.04536}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &188777932048266952
 PrefabInstance:
   m_ObjectHideFlags: 0
