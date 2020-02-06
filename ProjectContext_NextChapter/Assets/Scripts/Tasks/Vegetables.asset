@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Vegetables
   m_EditorClassIdentifier: 
   taskDescription: Vegetables for Dinner
-  shopItem: 1
+  shopItem: 2
   farmItem: 0

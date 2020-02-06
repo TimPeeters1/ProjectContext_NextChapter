@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 154ae4a089a3aa74f8aeec20dedf13bf, type: 3}
   m_Name: Meat
   m_EditorClassIdentifier: 
-  taskDescription: Get Meat
-  shopItem: 0
+  taskDescription: Meat
+  shopItem: 1
   farmItem: 0

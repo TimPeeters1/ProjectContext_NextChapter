@@ -9,6 +9,7 @@ public interface FarmElement
 
 public enum FarmItem
 {
+   None,
    Water,
    Harvest,
    Plough,
