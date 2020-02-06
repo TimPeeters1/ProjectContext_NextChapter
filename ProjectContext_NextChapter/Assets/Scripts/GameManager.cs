@@ -7,6 +7,9 @@ public class GameManager : MonoBehaviour
     public int Player1Money;
     public int Player2Money;
 
+    [HideInInspector] public MoneyCounter Player1Counter;
+    [HideInInspector] public MoneyCounter Player2Counter;
+
     #region Singleton
 
     private static GameManager _instance;
@@ -31,6 +34,7 @@ public class GameManager : MonoBehaviour
         _instance = this;
     }
     #endregion
+
 }
 
 

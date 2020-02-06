@@ -1,5 +1,23 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-3256401714224487095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Ambiences.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Ambiences.bank
+  SubDir: 
+  lastModified: 637165880070113822
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-2677257125177617431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,7 +33,7 @@ MonoBehaviour:
   Path: event:/AMBIENCES/FARM
   guid: 61b4c2b622fdb648825f7c26220770d7
   Banks:
-  - {fileID: -304338537414910477}
+  - {fileID: -3256401714224487095}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -37,7 +55,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/Audio/Master.strings.bank
   SubDir: 
-  lastModified: 637165849549185443
+  lastModified: 637165880070143740
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -60,7 +78,7 @@ MonoBehaviour:
   lastModified: 637165849594614943
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75,17 +93,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -671533474282457878}
-  - {fileID: -304338537414910477}
-  - {fileID: 8935238444573755734}
+  - {fileID: -3256401714224487095}
+  - {fileID: 282240491963118218}
   EditorEvents:
   - {fileID: -2677257125177617431}
   - {fileID: 282228553357934315}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 8935238444573755734}
+  - {fileID: 282240491963118218}
   StringsBanks:
   - {fileID: -671533474282457878}
-  stringsBankWriteTime: 637165849549185443
+  stringsBankWriteTime: 637165880070143740
   cacheVersion: 3
 --- !u!114 &282228553357934315
 MonoBehaviour:
@@ -102,7 +120,7 @@ MonoBehaviour:
   Path: event:/AMBIENCES/SUPERMARKET
   guid: 9e4169effbf01b42a64c6fc7589ffa7e
   Banks:
-  - {fileID: -304338537414910477}
+  - {fileID: -3256401714224487095}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -110,6 +128,24 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 41500
+--- !u!114 &282240491963118218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Master.bank
+  SubDir: 
+  lastModified: 637165880070123798
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &8935238444573755734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,4 +163,4 @@ MonoBehaviour:
   lastModified: 637165849573008844
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
