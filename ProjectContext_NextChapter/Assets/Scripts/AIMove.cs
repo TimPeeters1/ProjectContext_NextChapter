@@ -25,6 +25,7 @@ public class AIMove : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         AIrigid = GetComponent<Rigidbody>();
+        agent.speed = Random.Range(2, 7);
 
         AIState = AIMovement.Move;
         StartCoroutine("StayFewSeconds");
@@ -37,7 +38,7 @@ public class AIMove : MonoBehaviour
             case AIMovement.Move:
         PointDistance = Vector3.Distance(transform.position, CurrentTarget);
 
-        if(PointDistance <= 3)
+        if(PointDistance <= 3.6f)
         {
                     AIState = AIMovement.Stay;
         }
@@ -55,7 +56,7 @@ public class AIMove : MonoBehaviour
     IEnumerator StayFewSeconds()
     {
         CurrentTargetNumber = Random.Range(1, targetArray.Length);
-        yield return new WaitForSeconds(Random.Range(2.0f, 6.0f));
+        yield return new WaitForSeconds(Random.Range(1.0f, 8.0f));
 
         CurrentTarget = targetArray[CurrentTargetNumber].transform.position;
 
