@@ -19,7 +19,7 @@ public class PlayerMove : MonoBehaviour
     private TrailRenderer Player2Trail;
 
     private bool Player1isGround = false;
-    private bool Player2isGround = false;
+    public static bool Player2isGround = false;//Player2 has 2 trigger in same body, so i decided separate
     private float Player1Vertical = 0;
     private float Player2Vertical = 0;
 
@@ -55,7 +55,7 @@ public class PlayerMove : MonoBehaviour
                 Player1Trail.emitting = true;
             }
 
-            if (Input.GetKeyUp(KeyCode.Slash))
+            if (Input.GetKeyUp(KeyCode.LeftShift))
                 Player1Trail.emitting = false;
 
             if (Input.GetKey(KeyCode.A))
@@ -119,8 +119,5 @@ public class PlayerMove : MonoBehaviour
 
         if (gameObject.name == "Player1")
             Player1isGround = true;
-
-        if (gameObject.name == "Player2")
-            Player2isGround = true;
     }
 }
