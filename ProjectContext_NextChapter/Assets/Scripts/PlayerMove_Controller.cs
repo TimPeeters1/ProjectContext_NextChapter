@@ -68,12 +68,12 @@ public class PlayerMove_Controller : MonoBehaviour
         if (Input.GetAxis(RunAxis) > 0)
         {
             PlayerVertical *= 1.8f;
-            PlayerTrail.emitting = true;
+            //PlayerTrail.emitting = true;
         }
         else
         {
             PlayerVertical *= 1f;
-            PlayerTrail.emitting = false;
+            //PlayerTrail.emitting = false;
         }
 
         PlayerRigid.velocity = new Vector3(transform.forward.x * PlayerVertical, PlayerRigid.velocity.y, transform.forward.z * PlayerVertical);

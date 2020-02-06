@@ -31,6 +31,8 @@ public class Shelf : MonoBehaviour, ShopElement
     public void BuyItem()
     {
         GameManager.Instance.Player2Money -= Cost;
+        GameManager.Instance.Player2List.MarkItem(shelfItem, FarmItem.None);
         GameManager.Instance.Player2Counter.StartCoroutine(GameManager.Instance.Player2Counter.ShowBuyCounter(Cost));
+
     }
 }

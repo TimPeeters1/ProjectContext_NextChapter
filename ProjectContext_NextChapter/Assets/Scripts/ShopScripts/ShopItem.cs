@@ -9,6 +9,7 @@ public interface ShopElement
 
 public enum ShopItem
 {
+    None,
     Meat,
     Vegetables,
     Fruit,

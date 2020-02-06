@@ -7,8 +7,11 @@ public class GameManager : MonoBehaviour
     public int Player1Money;
     public int Player2Money;
 
-    [HideInInspector] public MoneyCounter Player1Counter;
-    [HideInInspector] public MoneyCounter Player2Counter;
+    public MoneyCounter Player1Counter;
+    public MoneyCounter Player2Counter;
+
+    public TaskList Player1List;
+    public TaskList Player2List;
 
     #region Singleton
 
