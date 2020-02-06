@@ -14,6 +14,7 @@ public class PlayerMove_Controller : MonoBehaviour
     [SerializeField] PlayerNumber ThisPlayer;
     [SerializeField] float MovePower;//Value that how much fast
     [SerializeField] float JumpPower;
+    [SerializeField] float RotationPower;
 
     private Rigidbody PlayerRigid;
     private TrailRenderer PlayerTrail;
@@ -63,7 +64,7 @@ public class PlayerMove_Controller : MonoBehaviour
     void Update()
     {
         PlayerVertical = Input.GetAxis(VerticalAxis) * MovePower * -1;
-        transform.Rotate(0, Input.GetAxis(RotationHorizontal), 0);
+        transform.Rotate(0, Input.GetAxis(RotationHorizontal)*RotationPower, 0);
 
         if (Input.GetAxis(RunAxis) > 0)
         {

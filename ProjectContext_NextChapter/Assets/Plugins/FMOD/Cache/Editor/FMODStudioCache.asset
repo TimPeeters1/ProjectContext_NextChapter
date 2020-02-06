@@ -1,5 +1,23 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8867186263128565619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Master.bank
+  SubDir: 
+  lastModified: 637165849573008844
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-8130047703910514149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17,7 +35,7 @@ MonoBehaviour:
   lastModified: 637165880070113822
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &-4020933506676782722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35,7 +53,7 @@ MonoBehaviour:
   lastModified: 637165880070123798
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &-3256401714224487095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69,7 +87,7 @@ MonoBehaviour:
   Path: event:/AMBIENCES/FARM
   guid: 61b4c2b622fdb648825f7c26220770d7
   Banks:
-  - {fileID: -8130047703910514149}
+  - {fileID: 9146676626796503389}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -91,7 +109,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/Audio/Master.strings.bank
   SubDir: 
-  lastModified: 637165880070143740
+  lastModified: 637165849549185443
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -129,17 +147,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -671533474282457878}
-  - {fileID: -8130047703910514149}
-  - {fileID: -4020933506676782722}
+  - {fileID: 9146676626796503389}
+  - {fileID: -8867186263128565619}
   EditorEvents:
   - {fileID: -2677257125177617431}
   - {fileID: 282228553357934315}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -4020933506676782722}
+  - {fileID: -8867186263128565619}
   StringsBanks:
   - {fileID: -671533474282457878}
-  stringsBankWriteTime: 637165880070143740
+  stringsBankWriteTime: 637165849549185443
   cacheVersion: 3
 --- !u!114 &282228553357934315
 MonoBehaviour:
@@ -156,7 +174,7 @@ MonoBehaviour:
   Path: event:/AMBIENCES/SUPERMARKET
   guid: 9e4169effbf01b42a64c6fc7589ffa7e
   Banks:
-  - {fileID: -8130047703910514149}
+  - {fileID: 9146676626796503389}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -236,3 +254,21 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &9146676626796503389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Ambiences.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Ambiences.bank
+  SubDir: 
+  lastModified: 637165849594614943
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
