@@ -10,7 +10,6 @@ public enum PlayerNumber
 public class PlayerMove_Controller : MonoBehaviour
 {
     
-
     [SerializeField] PlayerNumber ThisPlayer;
     [SerializeField] float MovePower;//Value that how much fast
     [SerializeField] float JumpPower;

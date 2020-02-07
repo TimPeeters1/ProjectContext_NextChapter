@@ -18,6 +18,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &-8714350949747016953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Master.bank
+  SubDir: 
+  lastModified: 637166385240000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-8130047703910514149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36,6 +54,111 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-7847498284643829896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/MOVEMENT/FARMER
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/MOVEMENT/FARMER
+  guid: 4791d56145735f48a3d21c63cacedc1a
+  Banks:
+  - {fileID: -5922607284970029406}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5950
+--- !u!114 &-7065743325189553671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Master.bank
+  SubDir: 
+  lastModified: 637165880070123798
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-6553358058465924714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AMBIENCES/FARM
+  m_EditorClassIdentifier: 
+  Path: event:/AMBIENCES/FARM
+  guid: 61b4c2b622fdb648825f7c26220770d7
+  Banks:
+  - {fileID: 7860925199107679457}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 33000
+--- !u!114 &-5922607284970029406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/SFX.bank
+  SubDir: 
+  lastModified: 637166385280000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-5815254514654467147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AMBIENCES/SUPERMARKET
+  m_EditorClassIdentifier: 
+  Path: event:/AMBIENCES/SUPERMARKET
+  guid: 9e4169effbf01b42a64c6fc7589ffa7e
+  Banks:
+  - {fileID: 7860925199107679457}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 41500
 --- !u!114 &-4020933506676782722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87,7 +210,7 @@ MonoBehaviour:
   Path: event:/AMBIENCES/FARM
   guid: 61b4c2b622fdb648825f7c26220770d7
   Banks:
-  - {fileID: -103287363981195063}
+  - {fileID: 7392849663863541516}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -95,6 +218,49 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 39000
+--- !u!114 &-2354826207334633751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/MOVEMENT/TROLLEY
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/MOVEMENT/TROLLEY
+  guid: e2fdd9cfb9937144ad6b00f98c8149d3
+  Banks:
+  - {fileID: -5922607284970029406}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 6250
+--- !u!114 &-1819388552725166487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Master.strings.bank
+  SubDir: 
+  lastModified: 637166385240000000
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 992
+  Exists: 1
 --- !u!114 &-1414527393849384365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,7 +293,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/Audio/Master.strings.bank
   SubDir: 
-  lastModified: 637165849549185443
+  lastModified: 637165880070143740
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -168,7 +334,7 @@ MonoBehaviour:
   lastModified: 637165849594614943
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -182,18 +348,21 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -671533474282457878}
-  - {fileID: -103287363981195063}
-  - {fileID: 1339795736127520363}
+  - {fileID: -1819388552725166487}
+  - {fileID: 7860925199107679457}
+  - {fileID: -8714350949747016953}
+  - {fileID: -5922607284970029406}
   EditorEvents:
-  - {fileID: -2677257125177617431}
-  - {fileID: 282228553357934315}
+  - {fileID: -6553358058465924714}
+  - {fileID: -5815254514654467147}
+  - {fileID: -7847498284643829896}
+  - {fileID: -2354826207334633751}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 1339795736127520363}
+  - {fileID: -8714350949747016953}
   StringsBanks:
-  - {fileID: -671533474282457878}
-  stringsBankWriteTime: 637165849549185443
+  - {fileID: -1819388552725166487}
+  stringsBankWriteTime: 637166385240000000
   cacheVersion: 3
 --- !u!114 &282228553357934315
 MonoBehaviour:
@@ -210,7 +379,7 @@ MonoBehaviour:
   Path: event:/AMBIENCES/SUPERMARKET
   guid: 9e4169effbf01b42a64c6fc7589ffa7e
   Banks:
-  - {fileID: -103287363981195063}
+  - {fileID: 7392849663863541516}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -253,7 +422,7 @@ MonoBehaviour:
   lastModified: 637165849573008844
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &1558360927330091235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -287,6 +456,42 @@ MonoBehaviour:
   Path: Assets/Audio/Master.bank
   SubDir: 
   lastModified: 637165849573008844
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &7392849663863541516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Ambiences.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Ambiences.bank
+  SubDir: 
+  lastModified: 637165880070113822
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &7860925199107679457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Ambiences.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Ambiences.bank
+  SubDir: 
+  lastModified: 637166385240000000
   LoadResult: 0
   FileSizes: []
   Exists: 1
