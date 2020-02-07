@@ -34,7 +34,6 @@ public class Player1Status : MonoBehaviour
         WaterState = Mathf.Lerp(WaterState,BeforeWaterState, 0.5f);
         FoodSlider.value = FoodState;
         WaterSlider.value = WaterState;
-        Debug.Log(WaterState);
     }
 
     IEnumerator Hungry()

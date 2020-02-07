@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MultiScene Setup/Tim_MultiScene_Main.unity
+    guid: 73ad4609822b5c949b9fb574d3682760
+  - enabled: 1
+    path: Assets/Scenes/MultiScene Setup/Tim_Farm.unity
+    guid: f8c299df1545c6443b173514c3da8fc1
+  - enabled: 1
+    path: Assets/Scenes/MultiScene Setup/Tim_SuperMarket.unity
+    guid: 4454d1ffc9bfec841ba6b4574457c534
   m_configObjects: {}
