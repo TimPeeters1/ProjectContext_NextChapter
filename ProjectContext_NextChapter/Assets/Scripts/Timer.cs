@@ -56,9 +56,9 @@ public class Timer : MonoBehaviour
 
     void Update()
     {
-        if (CurrentTime < 0)
+        if (CurrentTime < 0 || GameManager.isGameOver)
         {
-            GameOver();
+            TimeOver();
         }
         else
         {
@@ -66,10 +66,11 @@ public class Timer : MonoBehaviour
         }
     }
 
-    public void GameOver()
+    public void TimeOver()
     {
         TimerText.color = new Color(255, 0, 0);
         TimerText.text = "Round Over";
+        GameManager.isGameOver = true;
     }
 
 }
