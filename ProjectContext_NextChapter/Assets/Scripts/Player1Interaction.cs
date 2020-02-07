@@ -13,24 +13,30 @@ public class Player1Interaction : MonoBehaviour
 
     Image Player1UI;
 
+    string Submit;
+
     private void Start()
     {
         Player1UI = transform.GetChild(1).gameObject.transform.GetChild(0).GetComponent<Image>();
+    if(gameObject.name == "NewPlayer1")// i know that is stupid way to find who is player1, but i dont think other way
+        Submit = "Submit1";
     }
     private void OnTriggerStay(Collider other)
     {
-        if (other.tag == "Food")
+        if (!GameManager.isGameOver)
         {
-            Player1UI.sprite = FoodImage;
-
-            if (Input.GetKeyDown(KeyCode.E))//and XBOX Controller ( A )
+            if (other.tag == "Food")
             {
-                if (Player1Status.BeforeFoodState + 20 > 100)
-                    Player1Status.BeforeFoodState = 100;
-                else
-                    Player1Status.BeforeFoodState += GetFood;
+                Player1UI.sprite = FoodImage;
+
+                if (Input.GetKeyDown(KeyCode.E) || Input.GetButtonDown(Submit))
+                {
+                    if (Player1Status.BeforeFoodState + GetFood > 100)
+                        Player1Status.BeforeFoodState = 100;
+                    else
+                        Player1Status.BeforeFoodState += GetFood;
+                }
             }
-        }
 
             if (other.tag == "Water")
             {
@@ -38,15 +44,15 @@ public class Player1Interaction : MonoBehaviour
                 Player1UI.sprite = WaterImage;
 
 
-                if (Input.GetKeyDown(KeyCode.E))//and XBOX Controller ( A )
+                if (Input.GetKeyDown(KeyCode.E) || Input.GetButtonDown(Submit))
                 {
-                    if (Player1Status.BeforeWaterState + 20 > 100)
+                    if (Player1Status.BeforeWaterState + GetWater > 100)
                         Player1Status.BeforeWaterState = 100;
                     else
                         Player1Status.BeforeWaterState += GetWater;
                 }
-
             }
+        }
     }
 
     private void OnTriggerExit(Collider other)

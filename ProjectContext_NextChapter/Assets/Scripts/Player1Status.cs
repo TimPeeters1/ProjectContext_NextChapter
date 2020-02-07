@@ -34,25 +34,28 @@ public class Player1Status : MonoBehaviour
         WaterState = Mathf.Lerp(WaterState,BeforeWaterState, 0.5f);
         FoodSlider.value = FoodState;
         WaterSlider.value = WaterState;
+        Debug.Log(WaterState);
     }
 
     IEnumerator Hungry()
     {
         yield return new WaitForSeconds(HungerDelay);
-        BeforeFoodState -= HungerAmount;
         if (BeforeFoodState > 0)
-            StartCoroutine("Hungry");
+        BeforeFoodState -= HungerAmount;
         else
-            BeforeFoodState = 0;
+            GameManager.isGameOver = true;
+
+        StartCoroutine("Hungry");
     }
 
     IEnumerator Thirsty()
     {
         yield return new WaitForSeconds(ThirstDelay);
-        BeforeWaterState -= ThirstAmount;
         if (BeforeWaterState > 0)
-            StartCoroutine("Thirsty");
+            BeforeWaterState -= ThirstAmount;
         else
-            BeforeWaterState = 0;
+            GameManager.isGameOver = true;
+
+            StartCoroutine("Thirsty");
     }
 }

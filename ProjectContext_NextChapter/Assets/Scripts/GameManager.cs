@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
     public TaskList Player1List;
     public TaskList Player2List;
 
+    public static bool isGameOver = false;
+
     #region Singleton
 
     private static GameManager _instance;
@@ -38,6 +40,15 @@ public class GameManager : MonoBehaviour
     }
     #endregion
 
+    private void Update()
+    {
+        if (isGameOver)
+            GameOver();
+    }
+    public void GameOver()
+    {
+
+    }
 }
 
 

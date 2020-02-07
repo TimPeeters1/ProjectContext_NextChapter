@@ -63,29 +63,31 @@ public class PlayerMove_Controller : MonoBehaviour
 
     void Update()
     {
-        PlayerVertical = Input.GetAxis(VerticalAxis) * MovePower * -1;
-        transform.Rotate(0, Input.GetAxis(RotationHorizontal)*RotationPower, 0);
-
-        if (Input.GetAxis(RunAxis) > 0)
+        if (!GameManager.isGameOver)
         {
-            PlayerVertical *= 1.8f;
-            //PlayerTrail.emitting = true;
-        }
-        else
-        {
-            PlayerVertical *= 1f;
-            //PlayerTrail.emitting = false;
-        }
+            PlayerVertical = Input.GetAxis(VerticalAxis) * MovePower * -1;
+            transform.Rotate(0, Input.GetAxis(RotationHorizontal) * RotationPower, 0);
 
-        PlayerRigid.velocity = new Vector3(transform.forward.x * PlayerVertical, PlayerRigid.velocity.y, transform.forward.z * PlayerVertical);
+            if (Input.GetAxis(RunAxis) > 0)
+            {
+                PlayerVertical *= 1.8f;
+                //PlayerTrail.emitting = true;
+            }
+            else
+            {
+                PlayerVertical *= 1f;
+                //PlayerTrail.emitting = false;
+            }
 
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
-        {
-            isGrounded = false;
-            PlayerRigid.AddForce(Vector3.up * JumpPower, ForceMode.Impulse);
+            PlayerRigid.velocity = new Vector3(transform.forward.x * PlayerVertical, PlayerRigid.velocity.y, transform.forward.z * PlayerVertical);
+
+            if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+            {
+                isGrounded = false;
+                PlayerRigid.AddForce(Vector3.up * JumpPower, ForceMode.Impulse);
+            }
+
         }
-
-        
     }
 
     private void OnCollisionEnter(Collision collision)
