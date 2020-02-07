@@ -9,13 +9,17 @@ public class SoilStrip : MonoBehaviour, ShopElement
     public int CostToPlant;
     public bool isFairtrade;
 
-    [Space]
-    [Header("UI")]
-    public UnityEngine.UI.Text itemText;
+    [SerializeField] GameObject seeds;
+
+    void Awake()
+    {
+        seeds.SetActive(false);
+    }
 
     public void BuyItem()
     {
         PlantItem();
+        seeds.SetActive(true);
     }
 
     public void PlantItem()
